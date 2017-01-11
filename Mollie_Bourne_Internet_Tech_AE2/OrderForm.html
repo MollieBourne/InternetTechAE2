@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+
+<html> 
+    <head>
+        <title> Order Form </title> 
+        <meta charset="utf-8">
+        <script type="text/javascript" src="script/Order.js"></script>
+        <script type="text/javascript" src="script/ScrollToTop.js"></script>
+		<link rel="icon" href="image/._Favicon_image.png">
+        <link rel="stylesheet" href="CSS/Main.css">
+    </head> 
+
+    <body onload="Order(), scrollToTop()">
+        <div id="wrapper">
+            <header>
+                <h1> Solent Pizza  </h1>
+                <h2>  Orders </h2>
+            </header>
+            
+            <aside>
+                <nav id="PageList">
+                    <img src="image/logo.jpg" alt="logo" id="logo">
+                    <ul>
+                        <li> <a href="index_page.html"> Home </a></li>
+                        <li> <a href="ContactPage.html">Contact</a></li>
+                        <li> <a href="OrderForm.html"> Orders </a></li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <section>
+                <h2> Your Order  </h2> <br> 
+                <p> Please Select Your Order Here Including Pizza, Base, Extra Toppings, And Extras. </p> <br> 
+                <h2 class="sub-heading"> Free Delivery For All Orders Over £20!</h2>
+                
+                <!-- Orders form Starts here-->
+                <form id="Orders">
+                    <fieldset> 
+                        <legend> Select your Pizza Base Size:* </legend>
+                            <input type="radio" data-price = "5" name="base" value="base_small"> Small <span class="price">£5.00</span><br>
+                                    <p id="basesmallRequiredError" style="display: none">  Required </p>
+                            <input type="radio" data-price = "7.50" name="base" value="base_medium"> Medium <span class="price">£7.50</span><br>
+                                    <p id="baseMeduimRequiredError" style="display: none">  Required </p>
+                            <input type="radio" data-price = "10" name="base" value="base_large"> Large <span class="price">£10.00</span><br>
+                                    <p id="baseLargeRequiredError" style="display: none">  Required </p>
+                            <input type="radio" data-price = "13" name="base" value="base_x-large"> X-Large <span class="price">£13.00</span><br>
+                                    <p id="BaseXLargeRequiredError" style="display: none">  Required </p>
+                    </fieldset>
+                    
+                    <fieldset> 
+                        <legend> Select One Or More Toppings:*  </legend>
+                            <input type="checkbox" data-price = "0.20" name="Toppings" value="cheese"> Cheese <span class="price">£0.20</span><br>
+                                    <p id="CheeseRequiredError" style="display: none">  Required </p>
+                            <input type="checkbox" data-price = "0.30" name="Toppings" value="pepperoni"> Pepperoni <span class="price">£0.30</span><br>
+                                    <p id="pepperoniRequiredError" style="display: none">  Required </p>
+                            <input type="checkbox" data-price = "0.40" name="Toppings" value="Mushrooms"> Mushrooms <span class="price">£0.40</span><br>
+                                    <p id="MushroomsRequiredError" style="display: none">  Required </p>
+                            <input type="checkbox" data-price = "0.50" name="Toppings" value="Ham"> Ham <span class="price">£0.50</span><br>
+                                    <p id="hamRequiredError" style="display: none">  Required </p>
+                            <input type="checkbox" data-price = "0.60" name="Toppings" value="Anchovies"> Anchovies <span class="price">£0.60</span><br>
+                                    <p id="AnchoviesRequiredError" style="display: none">  Required </p>
+                    </fieldset>
+                    
+                    <fieldset> 
+                        <legend> Extras And Sides: </legend>
+                            <input type="checkbox" data-price = "1.50" name="Extras" value="Chips"> Chips <span class="price">£1.50</span><br>
+                            <input type="checkbox" data-price = "2.00" name="Extras" value="Garlic Bread"> Garlic Bread <span class="price">£2.00</span><br>
+                            <input type="checkbox" data-price = "1.70" name="Extras" value="CokeCola"> CokeCola <span class="price">£1.70</span><br>
+                    </fieldset>
+                            
+                            <div class="cart-totals-value" id="sub-total">&pound;0.00</div>
+                    
+                    <fieldset> 
+                        <legend> Delivery Information </legend>
+                            <p><input type="text" name="Address"     placeholder="Address Line 1"></p>
+                                <p id="AddressNameRequiredError" style="display: none">  Required </p>
+                            <p><input type="text" name="postCode"   placeholder="Post Code"></p>
+                                <p id="postCodeNameRequiredError" style="display: none">  Required </p>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend> Placing Your Order </legend>
+                        <input type="submit" value="Place Order" class="button"><br>
+                        <br><input type="reset" value="Reset" class="button">
+                    </fieldset>
+                <!-- Orders End Here --> 
+                    </form> <br> 
+                <img src="image/cheese_pizza.jpg" Alt="cheese pizza" id="cheesepizza">
+                
+                <div style="height:1200px">  
+                    <button id="scrollToTop" style="position:absolute; top: 1200px">Scroll To Top</button>
+                </div>
+                
+            </section>
+            
+            <footer> 
+                <h2> Contact US On:</h2>
+                <P> TELEPHONE On: 02380660329 or EMAIL Us On: SolentPizzas@solent.ac.uk </P>
+            </footer>
+        </div> <!--End Wrapper-->
+    </body> 
+
+</html>

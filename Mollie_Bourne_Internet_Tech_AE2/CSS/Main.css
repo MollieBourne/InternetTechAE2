@@ -1,0 +1,220 @@
+/* This is me style sheet that contains all of the formatting that changes what is standard in the browser this stylesheet applies to all of my pages and keeps the pages looking consistant in style */ 
+
+* {
+    padding: 0;
+    margin: 5px; 
+   }
+
+#wrapper 
+    {
+    height:   1000px;
+    width:    90%;
+	background-color: linear-gradient (grey, white, grey);
+	margin: auto;
+    }
+
+body 
+    {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+
+
+
+header 
+    {
+    background-color:  #ffb366;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 0 white;
+    margin: 5px;
+    padding-top: 5px;
+    height: 10%;
+    }
+
+aside  
+    {  
+    background-color: #b3b3b3;
+    width: 20%;
+    height:120%;
+    float: left;
+    padding-top: 0px;
+    padding-bottom: 95px;
+    }
+
+nav#PageList 
+    {
+    width:80%;
+    margin:20px auto 0 auto;
+    padding: 0% 0% 40% 0%;
+    text-align: center;
+    }
+
+nav#PageList ul li
+    {
+        list-style: none; 
+    }
+
+nav#PageList ul li a
+    { 
+        text-decoration:none;
+        color: white;
+        display: block;
+        
+    }
+
+nav#PageList li:hover a
+    {
+        color:aqua;
+    }
+
+section 
+    { 
+    padding: 5%;  
+    width: 67%;
+    height: 120%;
+    background-color: grey;
+    float: right;
+    position: relative;
+    margin: 5px;
+    }
+
+section h2 
+    {
+        text-align: center;
+    }
+
+section h3 
+    {
+        text-align: center;
+    }
+
+footer 
+    {
+        color: white;
+        background-color:  #ffb366;
+        width:100%;
+        float:left;
+        text-align: center;
+        box-shadow: 1px 1px 3px #292929;
+        margin-top: 5px;
+        height: 18%;
+        padding-top:5%
+    }
+
+
+#logo 
+{
+    width: 150px;
+    height: 130px;
+    margin:auto;
+    
+}
+/*  this style sheet was completed with all css linking to all of the assingment pages, index, contact and order form befor ethe deadline 29/03/2016 */
+
+/* home page */
+
+
+#Pizza_on_plate
+{
+    width:auto;
+    height: 33%;
+    margin:auto;
+    padding: auto;  
+}
+
+.Intro {
+    text-align: center;
+}
+
+#Together
+{
+    height: 33%;
+    width: auto;
+    margin: auto;
+    padding: auto;
+}
+
+/* contact page */
+
+#google_map
+{
+    margin: auto;
+    
+}
+
+section h2
+{
+    text-align: center;
+}
+
+#body_text
+{
+    text-align: center;
+}
+
+#ContactUs Legend { text-align: center;}
+
+#ContactUs 
+{
+	margin: 5px auto;
+    width: 220px;
+}
+
+#Contact input[type="text"]{float:right;}
+
+
+#ContactUS input[type="submit"] 
+{border-radius: 4px;
+ border: solid 1px black;
+ font-size:20px;
+ color: black;
+ background: green;
+margin: auto;
+ }
+ 
+ 
+/*orders page */
+
+#Orders Legend { text-align: center;}
+
+#Orders 
+{
+	margin: 5px auto;
+    width: 320px;
+}
+
+#Orders input[type="text"]
+
+#Orders input[type="submit"] 
+{border-radius: 4px;
+ border: solid 1px black;
+ font-size:20px;
+ color: black;
+ background: green;
+margin: auto;
+ }
+
+#Orders input[type="reset"] 
+{border-radius: 4px;
+ border: solid 1px black;
+ font-size:20px;
+ color: black;
+ background: green;
+margin: auto;
+ }
+
+#Orders fieldset 
+{
+    text-align: center;
+}
+
+#cheesepizza
+{
+    margin-left: 25%;
+    width: 50%;
+}
+
+.cart-totals-value
+{
+    text-align: center;
+}
